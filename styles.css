@@ -1,0 +1,40 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --nav-bg: #333333;
+    --nav-text: #ffffff;
+    --card: #f4f4f4;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --nav-bg: #1e1e1e;
+  --navtext: #ffffff;
+  --card: #f4f4f4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 20px;
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  transition: background 0.3s ease;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+}
