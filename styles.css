@@ -22,8 +22,9 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
-
 }
+
+/* Nav Bar */
 
 .navbar {
   display: flex;
@@ -36,14 +37,15 @@ body {
   transition: background 0.3s ease;
 }
 
-.navbar-left a
-color: var(--nav-text);
-text-decorations: none;
-margin-right:20px;
-font-weight:bold;
+.navbar-left a{
+  color: var(--nav-text);
+  text-decoration: none;
+  margin-right:20px;
+  font-weight:bold;
+}
 
+.nav-left a:hover {
   opacity: 0.7;
-
 }
 
 /* Toggle switch styling */
@@ -54,13 +56,12 @@ font-weight:bold;
 }
 
 /* Hide default checkbox */
-#theme switch {
+#theme-switch {
   display: none;
-
 }
 
 /*Toggle background */ 
-.Toggle. label{
+.toggle-label{
   width: 50px;
   height: 25px;
   background: var(--card);
@@ -68,13 +69,11 @@ font-weight:bold;
   border-radius: 50px;
   position: relative;
   cursor: pointer;
-  transition: background 0.3s ease;
-  
+  transition: background 0.3s ease; 
 }
 
-
 /*Toggle ball */ 
-.Toggle-ball {
+.toggle-ball {
   width: 21px;
   height: 21px;
   background: var(--text);
@@ -87,5 +86,5 @@ font-weight:bold;
 
 /* when checked */
 #theme-switch:checked + .toggle-label .toggle-ball {
-  transform: translate(25px);
+  transform: translateX(25px);
 }
