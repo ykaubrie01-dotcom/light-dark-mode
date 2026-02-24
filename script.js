@@ -1,4 +1,4 @@
-const themeSwitch = document.getE1emetById("theme-switch");
+const themeSwitch = document.getElementById("theme-switch");
 const body = document.body;
 
 // load saved theme
