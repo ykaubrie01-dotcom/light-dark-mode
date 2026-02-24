@@ -37,7 +37,7 @@ body {
   transition: background 0.3s ease;
 }
 
-.navbar-left a{
+.nav-left a{
   color: var(--nav-text);
   text-decoration: none;
   margin-right:20px;
